@@ -1,4 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    later step.[1]
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "letmein") {
+alert('You Got it Right!');
+window.open('www.wikihow.com');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<CENTER>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>
+
+2
+Add it to your page's code. In order to implement this code you will need editing access to your web page's underlying code. Once in the editor, add the protection template code within the body section of the page (after <body> tag).
+
+Advertisement
+
+3
+Add your own password. This password protection code requires you to add in your own password (in the code template it is set as "letmein"). Replace the text between the quotation marks with your own case-sensitive password.
+
+4
+Customize the code. Now write display messages for users entering either the correct password ("You Got it Right!") or incorrect answers ("Password Incorrect, Please Try Again."). You must also specify the web page URL (set currently as "www.wikihow.com") where the user will be directed if they get the password correct. This should be replaced your own password protected URL.
+An incorrect password leads back to the password prompt in this code. In other code templates you can choose to redirect these users to a different page altogether.
+
+5
+Test it out. Now that you've protected your page with a password it's time to test it out. Open the page in your browser and try entering an incorrect password, then the correct one. Double check both the password accuracy and the display messages you've coded in.
+If you're struggling with the HTML coding aspect of this method, have a closer look at Create a Simple Web Page with HTML for a bit more guidance.
+
+Advertisement
+Method 2 of 2:
+Protection Through Your Hosting Company
+
+1
+Research your current web hosting plan features. Login to your web hosting account and search for password protection as part of your hosting subscription package. Many hosts offer the ability to password protect a page you control with a simple-to-use widget from your account dashboard.
+Different web hosts offer different feature sets, so consider this when choosing your next web host.
+
+2
+Follow the instructions. If your host offers password protection as a built-in feature, implementation should be as simple as filling out a form.
+
+3
+Test the password protection. After you've protected your page you should always test it out by opening the protected page URL in your browser and trying both incorrect and correct passwords to see what happens. This way you'll know if you implemented the password protection correctly.
+4
+Contact your web host directly. If you're unsure of whether this feature is available to you or of how best to implement it, try emailing your web host for assistance. Most web hosts are run by experienced webmasters and will be more than willing to help. They will also know all the details about your hosting setup and can advise you on best practices for the specific data you'd like protected.
+5
+Look into 3rd party protection. Although your web host will offer the best advice on how to proceed, know that there are many 3rd party password protection options for you to consider implementing for your webpage.[2]
+3rd party protection can be useful in a variety of ways - by generating difficult to crack passwords or by setting up a fully-automated web login.
+
+Advertisement
+Community Q&A
+Question
+Is there a way to set up automatic access to a password protected page for someone who subscribes to a membership and pays a fee?
+Community Answer
+That would be very advanced and you would need to be great at php or node.js (server side stuff).
+Question
+How can I edit the look of the button? Not the text, but the actual font color and background.
+Jordan Dunton
+Community Answer
+You can add a class or ID to the element and use CSS to customize the input form.
+Question
+How can I have multiple passwords for the same page?
+Community Answer
+In javascript you can do an "if" statement like: if(password == "coolguy" || password == "cool dude"){} The two pipes mean "or."
+Question
+How can I do this with HTML instead of JavasScript?
+Community Answer
+That is not possible. HTML is readable to everyone, so it won't work. Try to do it with HTCACCESS and HTCPASSWORD files.
+Question
+I may be wrong, but isn't method one basically useless? Isn't the password stored in plain text in the source of the website useless?
+Community Answer
+My advice would be to place the script into a separate .js file, then name it something random - like 12e1ek12ej1ioejoi23. But you are right; this is not a secure method. Still, it is cool to show your friends or just stop random people accessing an unimportant page.
+Question
+How can I open a new page on the password page?
+Community Answer
+You insert the name of the page you wish to go to after inputting the password on this line: window.open('INSERT HERE');
+Question
+How do I use multiple password protection on a web page?
+Community Answer
+If you want to be able to have multiple passwords, you can just add them to the if statement separated by the || operator, which is Javascript's or operator.
+Question
+I want my password to have dark circles. Is there any way I can do that?
+Community Answer
+No, there's not a way to use dark circles as a password.
+Question
+Entering the correct password merely takes the user to another page which is not password protected. What is the point?
+Community Answer
+Many websites are now adopting h t t p s (secure) pages across websites. However, many are still only set to protect the log-in page. Updating entire websites to use all-secure pages can be tricky. At least your password is still protected. That is, your password is not exposed on non-secure pages. But trackers (and hackers including state-level surveillance) can follow what you do on non-secure sites.
+Video
+Loading video
+Tips
+Test out your password protection. Try to break into it, o
